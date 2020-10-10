@@ -67,6 +67,12 @@ config V4L2_FLASH_LED_CLASS
 
 	  When in doubt, say N.
 
+config V4L2_LOOPBACK
+	tristate "V4L2 loopback device"
+	depends on VIDEO_V4L2
+	help
+	  Say Y here to enable the V4L2 loopback device.
+
 config V4L2_FWNODE
 	tristate
 	select V4L2_ASYNC
